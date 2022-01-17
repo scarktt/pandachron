@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{super()}}
+    Add Task
+{% endblock %}
+{% block head %}
+    <style type="text/css">
+
+    </style>
+{% endblock %}
+{% block content %}
+
+    <ul>
+	    {% for todo in todos%}
+		    <li>{{ todo }}</li>
+	    {% endfor %}
+    </ul>
+
+{% endblock %}
+
+{% block footer %}
+{% endblock %}
